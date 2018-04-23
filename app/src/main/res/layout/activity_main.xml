@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditText
+        android:id="@+id/et_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://www.baidu.com"/>
+    <Button
+        android:id="@+id/btn_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request"/>
+
+    <ProgressBar
+        android:id="@+id/pb_request"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+</LinearLayout>
